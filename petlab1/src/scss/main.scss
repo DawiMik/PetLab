@@ -1,5 +1,11 @@
 @import "reset.css";
 @import "settings/fonts";
+@import "settings/colors";
+@import "settings/mixins";
+@import "sections/home.scss";
+@import "sections/threecolumns.scss";
+@import "sections/forsteps.scss";
+@import "sections/aboutus";
 
 body {
   font-family: $font-base;
