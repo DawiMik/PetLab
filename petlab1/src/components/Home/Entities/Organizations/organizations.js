@@ -1,17 +1,22 @@
 import React from 'react';
+import HomeHeader from "../../HomeHeader";
+import HomeThreeColumns from "../../HomeThreeColumns";
+import HomeForSteps from "../../HomeForSteps";
+import HomeAboutUs from "../../HomeAboutUs";
+import HomeContact from "../../HomeContact";
+import HomeFooter from "../../HomeFooter";
+import OrgFakeOne from "./organizationFakeOne";
+import OrgFakeTwo from "./organizationFakeTwo";
+import OrgFakeThree from "./organizationFakeThree";
 import {Link} from "react-router-dom";
-import FoundOne from "./Entities/Foundations/foundone";
-import FoundTwo from "./Entities/Foundations/foundtwo";
-import FoundThree from "./Entities/Foundations/foundthree";
-import FoundFake from "./Entities/Foundations/foundfake";
 
-const HomeMainSection = () => {
+const Organizations  = () => {
 
     class TodoApp extends React.Component {
         constructor() {
             super();
             this.state = {
-                todos: [<FoundOne/>,<FoundTwo/>,<FoundThree/>,<FoundFake/>,<FoundFake/>,<FoundFake/>,<FoundFake/>,<FoundFake/>,<FoundFake/>],
+                todos: [<OrgFakeOne/>,<OrgFakeTwo/>,<OrgFakeThree/>,<OrgFakeTwo/>,<OrgFakeOne/>,<OrgFakeTwo/>,<OrgFakeThree/>,<OrgFakeTwo/>,<OrgFakeOne/>],
                 currentPage: 1,
                 todosPerPage: 3
             };
@@ -68,23 +73,33 @@ const HomeMainSection = () => {
     }
 
     return (
-        <div id="who_we_help">
-            <h1>Komu pomagamy?</h1>
-            <div className="decoration"></div>
-            <div className="entities">
-                <Link to="/foundation" style={{border: "1px solid black"}}>Fundacjom</Link>
-                <Link to="/organizations">Organizacjom pozarządowym</Link>
-                <Link to="/local_help">Lokalnym zbiórkom</Link>
-            </div>
-            <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym
-                się zajmują, komu pomagają i czego potrzebują.</p>
+        <>
+            <HomeHeader/>
+            <HomeThreeColumns/>
+            <HomeForSteps/>
+            <HomeAboutUs/>
+            <>
+                <div id="who_we_help">
+                    <h1>Komu pomagamy?</h1>
+                    <div className="decoration"></div>
+                    <div className="entities">
+                        <Link to="/foundation">Fundacjom</Link>
+                        <Link to="/organizations" style={{border: "1px solid black"}}>Organizacjom pozarządowym</Link>
+                        <Link to="/local_help">Lokalnym zbiórkom</Link>
+                    </div>
+                    <p>W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym
+                        się zajmują, komu pomagają i czego potrzebują.</p>
 
-            <ul className="entities_all">
-                <TodoApp/>
-            </ul>
+                    <ul className="entities_all">
+                        <TodoApp/>
+                    </ul>
 
-        </div>
+                </div>
+            </>
+            <HomeContact/>
+            </>
     )
 }
 
-export default HomeMainSection
+
+export default Organizations

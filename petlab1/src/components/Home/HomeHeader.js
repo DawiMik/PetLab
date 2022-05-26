@@ -15,10 +15,10 @@ const HomeHeader = () => {
                 </div>
                 <div className="menu">
                     <Link to="/" className="link">Start</Link>
-                    <Scroll to="for_steps" smooth duration={500} className="link">O co chodzi?</Scroll>
-                    <Scroll to="about_us" smooth duration={500}className="link">O nas</Scroll>
-                    <Link to="/" className="link">Fundacja i organizacje</Link>
-                    <Scroll to="contact" smooth duration={500} className="link">Kontakt</Scroll>
+                    <Scroll to="for_steps" smooth duration={500} className="link" style={{cursor:'pointer'}}>O co chodzi?</Scroll>
+                    <Scroll to="about_us" smooth duration={500}className="link" style={{cursor:'pointer'}}>O nas</Scroll>
+                    <Scroll to="who_we_help" smooth duration={500} className="link" style={{cursor:'pointer'}}>Fundacja i organizacje</Scroll>
+                    <Scroll to="contact" smooth duration={500} className="link" style={{cursor:'pointer'}}>Kontakt</Scroll>
                 </div>
                 <div className="start_help">
                     <h1>Zacznij pomagać!</h1>

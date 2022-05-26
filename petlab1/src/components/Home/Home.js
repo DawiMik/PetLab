@@ -16,7 +16,6 @@ const Home = () => {
             <HomeAboutUs/>
             <HomeMainSection/>
             <HomeContact/>
-            <HomeFooter/>
         </>
 
     )

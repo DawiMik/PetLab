@@ -1,0 +1,108 @@
+.contact_main_container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+}
+
+#contact {
+  margin-top: 3em;
+  width: 1400px;
+  height: 1112px;
+  background-image: url("../../assets/Background-Contact-Form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 20%;
+  z-index: 4;
+
+}
+
+.contact_section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 65vw;
+  h1 {
+    font-size: 38px;
+    color: $black-font-color;
+    align-self: center;
+  }
+  .mail_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .contact_names {
+      width: 560px;
+      display: flex;
+      justify-content: space-between;
+      .contact_name, .contact_email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+      }
+    }
+    button {
+      display: flex;
+      align-self: end;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3em;
+      font-size: 18px;
+      border: 1px solid $grey-font-color;
+      padding: 1em 4em;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.4;
+        border: 2px solid $black-font-color;
+      }
+    }
+  }
+}
+label {
+  font-size: 16px;
+  color: $black-font-color;
+  font-weight: bold;
+  margin: 1em 0 1em 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &:after {
+    display: block;
+    content: '';
+    width: 15em;
+    height: 2px;
+    background: $grey-font-color;
+    position: absolute;
+    top: 4.2em;
+    left: 0;
+    opacity: 0.5;
+  }
+}
+input, textarea {
+  font-size: 18px;
+  color: $grey-font-color;
+  opacity: 0.5;
+
+}
+.contact_text {
+  align-self: center;
+  margin-top: 2em;
+
+  label:after {
+    width: 37em;
+    top: 10em;
+  }
+  textarea {
+    width: 35em;
+    height: 7em;
+    overflow: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  textarea::placeholder {
+    width: 100%;
+    height: 7em;
+  }
+
+}
