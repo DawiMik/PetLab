@@ -4,7 +4,6 @@ import HomeThreeColumns from "../../HomeThreeColumns";
 import HomeForSteps from "../../HomeForSteps";
 import HomeAboutUs from "../../HomeAboutUs";
 import HomeContact from "../../HomeContact";
-import HomeFooter from "../../HomeFooter";
 import LocalsFakeOne from "./localsFakeOne";
 import LocalsFakeTwo from "./localsFakeTwo";
 import LocalsFakeThree from "./localsFakeThree";
