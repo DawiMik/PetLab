@@ -5,7 +5,7 @@ import HomeForSteps from "../../HomeForSteps";
 import HomeAboutUs from "../../HomeAboutUs";
 import HomeMainSection from "../../HomeMainSection";
 import HomeContact from "../../HomeContact";
-import HomeFooter from "../../HomeFooter";
+
 
 const Foundations = () => {
     return (
